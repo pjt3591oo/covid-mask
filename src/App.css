@@ -28,6 +28,37 @@
   color: #61dafb;
 }
 
+.helper {
+  text-align: right;
+  padding: 40px;
+}
+
+.helper div.dot {
+  display: inline-block;
+  width:25px;
+  height:25px;
+  border-radius:75px;
+  text-align:center;
+  margin:0 auto;
+  font-size:12px;
+  vertical-align:middle;
+  line-height:150px;
+
+}
+
+.helper .hospital .dot{
+  background: #8e8e8e;
+
+}
+.helper .post .dot{
+  background: #d95050;
+
+}
+.helper .bank .dot{
+  background: #32B056;
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
