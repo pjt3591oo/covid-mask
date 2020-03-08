@@ -7,7 +7,7 @@ let { kakao } = window
 let Map = function (props) {
   let [position, setPosition] = useState([37.831971499683, 126.8197768370203])
   let [m, setM] = useState(0)
-  let [address, setAddress] = useState()
+  let [address, setAddress] = useState('')
 
   let [map, setMap] = useState()
   let [marker, setMarker] = useState()
@@ -18,7 +18,11 @@ let Map = function (props) {
 
   const c = (e) => {
     let geocoder = new kakao.maps.services.Geocoder();
-    geocoder.addressSearch(address, function(result, status) {
+    if(address.trim().length <1) {
+      alert('주소를 입력하세요')
+      return
+    }
+    geocoder.addressSearch(address.trim(), function(result, status) {
       console.log(result)
       result.map(item => {
         setPosition([item.y, item.x])
