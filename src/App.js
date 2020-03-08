@@ -25,12 +25,21 @@ function App() {
         </p>
         </div>
       </div>
+      <div className="messenger">
+        <h2>메신저 바로가기</h2>
+        <div className="noti">
+          <a href="https://t.me/joinchat/GX4YMxU4JxVRKwcnIYHsYg" target="_blank">
+            <img src="telegram.jpeg"></img>
+          </a>
+        </div>
+      </div>
       <div>
         <h1>마스크 정보 조회 API 현재 정식 오픈이 아닙니다.</h1>
         <h1>모바일 반응 미지원.</h1>
         <h1>해당 정보는 100% 정확하지 않을 수 있습니다.</h1>
         <h1>참고용으로 사용해주세요.</h1>
       </div>
+
     </div>
   );
 }

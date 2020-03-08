@@ -151,7 +151,6 @@ let Map = function (props) {
 
   return (
     <div className="map_wrap">
-      <div id="map"></div>
 
       <div id="menu_wrap" className="bg_white">
           <div className="option">
@@ -165,6 +164,7 @@ let Map = function (props) {
           <ul id="placesList"></ul>
           <div id="pagination"></div>
       </div>
+      <div id="map"></div>
     </div>
   )
 }
